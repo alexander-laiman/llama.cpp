@@ -50,6 +50,7 @@ if (WIN32)
 endif()
 
 if (MSVC)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /EHsc")
     add_compile_options("$<$<COMPILE_LANGUAGE:C>:/utf-8>")
     add_compile_options("$<$<COMPILE_LANGUAGE:CXX>:/utf-8>")
     add_compile_options("$<$<COMPILE_LANGUAGE:C>:/bigobj>")
